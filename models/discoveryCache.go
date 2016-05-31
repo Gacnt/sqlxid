@@ -1,7 +1,7 @@
 package models
 
 var DiscoveryCacheSchema = `
-CREATE TABLE discovery_caches (
+CREATE TABLE IF NOT EXISTS discovery_caches (
   CACHE_ID  TEXT NOT NULL,
   ENDPOINT  TEXT NOT NULL,
   LOCAL_ID   TEXT NOT NULL,
